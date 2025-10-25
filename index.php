@@ -58,7 +58,7 @@ include_once("templates/header.php");
                    
                     <form class="delete-form"
                      action="config/process.php?"
-                      method="">
+                      method="post">
 
                         <input type="hidden" name="type" value="delete">
                         <input type="hidden" name="id" value="<?= $conta['id'] ?>">
@@ -70,7 +70,6 @@ include_once("templates/header.php");
         </tbody>
 
     </table>
-
 
     <?php else: ?>
     <p id="empty-list-text">Ainda não há contas em seu financeiro,
